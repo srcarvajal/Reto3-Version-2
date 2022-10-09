@@ -30,4 +30,9 @@ public class RoomRepository {
     public Room save (Room room){
         return categoryCrudRepository.save(room);
     } 
+    
+    public void delete(Room room){
+        categoryCrudRepository.delete(room);
+    }
+    
 }
